@@ -18,6 +18,20 @@ personal-website/
 └─ screenshots/          ← 验证脚本自动拍的成品截图（可删）
 ```
 
+## 线上地址
+
+站点已发布到 GitHub Pages：**https://ycmaiball.github.io/**
+
+- 仓库：https://github.com/ycmaiball/ycmaiball.github.io （公开，`main` 分支，Pages 直接部署根目录）
+- 更新时间 2026-11-07；首次构建后线上抓取校验：HTTP 200、400,521 字节、`<title>杨诚铭 · 全栈开发 · 武汉理工大学</title>`、7 张内联 webp 全部命中、1440 宽无横向溢出、控制台零报错
+- 改完内容后重新发布：
+
+```bash
+python build.py
+git add -A && git commit -m "更新内容"
+git push          # 推上去后 GitHub Pages 自动重建，约 1–2 分钟生效
+```
+
 ## 打开
 
 双击 `index.html`。Chrome / Edge / Safari / Firefox 均可，无需启动服务器。
