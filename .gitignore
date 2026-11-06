@@ -1,0 +1,7 @@
+﻿# 验证脚本生成的截图（可随时重跑，不入库）
+screenshots/
+.edge-tmp/
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
